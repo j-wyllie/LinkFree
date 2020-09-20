@@ -25,7 +25,7 @@ body{
 }
 
 #userName{
-    color: #bbb;
+    color: var(--accentColor);
     font-size: 1.7rem;
     font-weight: 600;
     line-height: 1.25;
