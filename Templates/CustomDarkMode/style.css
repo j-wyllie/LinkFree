@@ -3,24 +3,30 @@
 :root {
     --bgColor:#1C1C1C;
     --accentColor: #E6E6E6;
+    --linkColor: indianred;
     --font: 'Karla', sans-serif;
 }
 
 body{
     background-color: var(--bgColor);
+    margin: 8px;
+}
+
+#topSection{
+    margin-bottom: 1rem;
 }
 
 #userPhoto{
     width: 130px;
     height: 130px;
     display: block;
-    margin: 35px auto 20px;
+    margin: 35px auto 10px;
     border-radius: 50%;
 }
 
 #userName{
     color: #bbb;
-    font-size: 1rem;
+    font-size: 1.7rem;
     font-weight: 600;
     line-height: 1.25;
     display: block;
@@ -29,10 +35,23 @@ body{
     text-align: center;
     text-decoration: none;
 }
+.lightText{
+    color: #bbb;
+    font-family: var(--font)
+}
+
+.subTitle{
+    margin: 0;
+    font-size: 1rem;
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+}
+
 #description{
+    margin: 2rem;
     text-align: center;
     color: var(--accentColor);
-    font-family: var(--font)
 }
 #links{
     max-width: 675px;
@@ -55,6 +74,44 @@ body{
 }
 
 .link:hover{
-    background-color: indianred;
+    background-color: var(--linkColor);
     color: var(--accentColor);
+}
+
+.contactInfo{
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+    font-size: 1rem;
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+}
+.contactItem{
+    width: 33%;
+}
+
+.left {
+    text-align: left;
+}
+.center{
+    text-align: center;
+}	
+.right{
+    text-align: right;
+}
+
+footer{
+    margin: 8px;
+}
+#footerText{
+    position: absolute;
+    bottom: 1.5rem;
+    left: 1.5rem;
+    text-align: right;
+    color: var(--accentColor);
+    font-size: 1rem;
+}
+footer a{
+   color: var(--linkColor);
 }
