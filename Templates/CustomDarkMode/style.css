@@ -29,7 +29,10 @@ body{
     text-align: center;
     text-decoration: none;
 }
-
+#description{
+    text-align: center;
+    font-family: var(--font)
+}
 #links{
     max-width: 675px;
     width: auto;
